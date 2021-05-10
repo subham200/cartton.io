@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Mulish', sans-serif;
+   
+}
+
+.float-end{
+	margin-top: 17px;
+}
+
+
+.nav_style{
+	background: #ffff;
+	box-sizing: 0 10px 30px rgba(138,155,165,0.15);
+}
+.navbar-brand img{
+	width: 80px;
+	height: 50px;
+}
+.navbar-nav li a{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	/*color: #ff7230;*/
+	color: #fff;
+	position: relative;
+} 
+.navbar li a:before{
+   content: "";
+   position: absolute;
+   top:100%;
+   bottom: 50%;
+   width: 0px;
+   height: 3px;
+   background:  #ff7230;
+   transition: all 0.3s linear;
+}
+.navbar-nav li a:hover:before{
+	width: 80%;
+}
+.navbar-nav li a:hover {
+	color: #ff7230!important;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #ff7230 !important;
+}
+
+@media (max-width: 998px){
+	.navbar-nav{
+    margin-top: 20px !important;
+    text-align: center !important;
+  }
+     .navbar-nav li a:hover:before {
+     	width: 0%;
+     }
+  }
+
+
+/* hearder style css */
+
+.header_text {
+	font-size: 26px;
+	color: #8c8c8c;
+	margin-top: 50px; 
+}
+.header_text2{
+	font-size: 26px;
+	color: #2d3436;
+	margin-bottom:50px;
+}
+.span_header_text {
+	color: #ff7230 !important;
+}
+.hire_me{
+	width: 160px;
+	height: 40px;
+	background:#ff7230;
+	font-size: 20px;
+	color: #fff;
+	text-transform: capitalize;
+	outline: none;
+	border: none;
+	transition: all 0.3s linear;
+	-webkit-transition:all 0.3s linear;
+}
+
+.about_me{
+    width: 160px;
+	height: 40px;
+	background:#fff;
+	font-size: 20px;
+	color: #ff7230;
+	text-transform: capitalize;
+	outline: none;
+	border: 1px solid;
+	transition: all 0.3s linear;
+	-webkit-transition:all 0.3s linear;	
+}
+.hire_me:hover{
+	background: #fff;
+	color: #ff7230;
+	border: 1px solid #ff7230;
+}
+.about_me:hover{
+	background: #ff7230;
+	color: #fff;
+	border: none;
+}
+.header_mail p{
+	margin-top: 40px;
+	font-size: 20px;
+	color: #000
+	font-weight:400;
+}
+.header_mail p:nth-child(2){
+     margin-top:-20px; 
+}
+
+/* about section css */
+
+.about_sec{
+	padding-top:50px;
+}
+.main_title h1{
+	font-weight: 500;
+	font-size: 80px;
+	color: #000;
+	text-transform: capitalize;
+	/*position: relative;*/
+	text-align: center;
+}
+
+.about_text{
+	/*margin-top: 20px;*/
+}
+
+.about_text h1{
+	font-size: 33px;
+	color: #000;
+	margin-top: -20px;
+	margin-bottom: 25px;
+}
+
+.about_text h2{
+	font-size: 24px;
+}
+.about_text p{
+ font-size: 24px;
+ color: #000;
+}
+
+/*expert section start*/
+
+.expert_sec{
+	padding-top: 50px;
+}
+.main_title p{
+	font-size:  26px;
+	color: #000;
+	text-align: center;
+}
+
+.common_div{
+margin-top: 88px; 
+
+}
+
+.expert_sec .progress{
+ width: 90%;
+ height: 14px;
+ border-radius: 7px;
+}
+
+ 
+.expert_sec .pb_1{
+	width: 93%;
+	border-radius:7px;
+	background-color: #ea2148; 
+}
+
+.expert_sec .pb_2{
+	width: 93%;
+	border-radius:7px;
+	background-color: #ff7230; 
+}
+
+.expert_sec .pb_3{
+	width: 93%;
+	border-radius:7px;
+	background-color: #1c9588; 
+
+}
+
+.expert_sec h2{
+	position: relative;
+}
+
+.expert_h1:after{
+ content: '93%';
+ position: absolute;
+ top: 10px;
+ right: 13%;
+  color: #000;
+/*font-size: 16px;
+ font-size: 500;*/
+}
+
+.expert_h2:after{
+ content: '93%';
+ position: absolute;
+ top: 10px;
+ right: 13%;
+  color: #000;
+ /*font-size: 16px;
+ font-size: 500;*/
+}
+
+.expert_h3:after{
+ content: '93%';
+ position: absolute;
+ top: 10px;
+ right: 13%;
+  color: #000;
+ /*font-size: 16px;
+ font-size: 500;*/
+}
+.text-center {
+    text-align: center!important;
+}
+
+.float-md-right img{
+	border-radius: 100%;
+    width: 60%;
+padding-top: 90px;
+}
+
+/*ourserivces*/
+
+.ourserivces{
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.serivces_div{
+	border-radius: #f6f6f6f6;
+	padding: 20px 10px 70px 10px;
+	margin-top: 50px;
+-webkit-transition: all 0.1s linear;
+position: relative;
+box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+}
+
+.serivces_div:hover{
+	background: #fff;
+	box-shadow: 0 0 4px 1px grey;
+}
+
+.serivces_div h1 {
+	text-align: center;
+	font-size: 52px;
+	color: #ff7230;
+	position: relative;
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
+	margin: auto;
+	background: #ffeee6;
+}
+
+.fa-heart{
+	color: #fff;
+	position: absolute;
+	bottom: 1px;
+    left: 1px
+}
+
+.services_div .col-lg-3 .col-md-4 .col-10{
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+
+.serivces_div:hover .fa-heart {
+	color: #ffeee6;
+}
+
+.serivces_div li i{
+   color: #ff7230;
+}
+
+.serivces_div li{
+	list-style: none;
+	font-size: 23px;
+	color: #000000;
+	font-weight: 300;
+	text-transform: capitalize;
+	padding-left: 5px;
+}
+
+.services_div li:first-child{
+	padding-top: 20px;
+}
+
+.serivces_div .Serivce_list_icon
+{
+		color: #ffeee6;
+	width: 14px;
+	height: 14px;
+	margin-right: 5px;
+}
+
+/*hire me section*/
+
+.hireme_section{
+     padding-top: 45px;
+	padding-bottom: 45px;
+	text-align: center;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../y.jpg');
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.hireme_section h1{
+  font-size: 40px;
+  color: #ff7230;
+}
+
+.hireme_section p{
+	font-size: 32px;
+	color: #ffffff;
+	letter-spacing: 3px;
+}
+.hireme_section h3{
+	font-size: 30px;
+	color: #ffffff;
+	margin-top: -10px;
+	padding-bottom: 30px;
+}
+
+/*contact us css*/
+
+.contactme_sec{
+	padding: 50px;
+	padding-bottom: 50px;
+	position: relative; 
+}
+
+
+.contact_img  img {
+	position: absolute;
+	left: 60px;
+	width: 20%;
+	bottom: auto;
+}
+
+/*////////////Contact_share_div///////////////////*/
+
+.contact_share_div{
+	padding: 20px;
+	align-content: center;
+	border-radius: 30px;
+	background: #f6f6f6;
+	-webkit-transition: all 0.2s linear;
+}
+.contact_share_div:hover{
+
+	background-color: #ffffff
+	border: 1px solid #ff874f;
+	filter: drop-shadow(2px 0px 8px rgba(0,0,0,0.18));
+}
+.contact_share_div:hover .fas , .fab , .fas, .fas{
+	color: #ff7230;
+}
+.contact_share_div p{
+	margin: 0;
+}
+@media(max-width: 760px){
+	.contact_share_div:nth-child(2){
+		margin: 30px 0 !important;
+	}
+}
+
+
+/*/socal icon css*/
+
+.fa-facebook-f, .fa-instagram, .fa-behance, .fa-dribbble, .fa-pinterest{
+	color: #000;
+}
+
+
+.socialsites_links  .fa-facebook-f:hover{
+	color: #3b5998;
+}
+
+.socialsites_links  .fa-instagram:hover{
+	color: #e4405f;
+}
+
+.socialsites_links  .fa-behance:hover{
+	color: #ea4c89;
+}
+
+.socialsites_links  .fa-dribbble:hover{
+	color: #bd081c;
+}
+.socialsites_links  .fa-pinterest:hover{
+	color: #131418;
+}
+
+footer{
+	width: 100%;
+	line-height: 50px;
+	background: #ff7230;
+	color: #fff;
+}
+footer p{
+	margin: 0;
+
+}
+
+@media (max-width: 992px){
+	.main_title h1{
+		font-size: 40px;
+	}
+    .main_title p{
+    	font-size: 18px;
+    }
+
+   	.about_text{
+   		margin-top: 30px;
+   	}
+   
+   	.about_text p{
+   		font-size: 17px;
+   		line-height: 1.5;
+   	}
+   
+	.about_text h1{
+		font-size: 26px;
+		font-weight: bold;
+
+	}
+	.common_div {
+		text-align: center;
+		justify-content:center;
+		margin-top: 30px !important;
+		margin: auto;
+	}
+	.expert_sec h2{
+		text-align: left;
+	}
+	.hireme_section p{
+		font-size: 22px;
+		letter-spacing:0px;
+	}
+     .hireme_section h1{
+       font-size: 32px;
+     }
+
+    .hireme_section h3{
+		font-size: 21px;
+        color: #fff;
+		letter-spacing:2px;
+	}
+
+
+	.contact_img img{
+		display: none;
+	}
+
+	.contact_resp{
+	  margin: 0 ! important;	
+	}
+	.contact_inner{
+		margin: auto;
+	}
+}
